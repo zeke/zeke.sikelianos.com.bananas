@@ -1,0 +1,20 @@
+!!! 5
+%html
+  %head
+    %title Zeke Sikelianos, Web Designer/Developer
+    = stylesheets 'blueprint_screen', 'application'
+    <script type="text/javascript" src="http://use.typekit.com/hhr2ppk.js"></script>    
+    
+    <script language="javascript" src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+    //<![CDATA[
+    google.load("jquery", "1.4.2");
+    // google.load("jqueryui", "1.8.1");
+    // google.load("chrome-frame", "1.0.2");
+    //]]>
+    </script>
+    = javascripts 'application'
+  %body
+
+    #content.invisible
+      = yield

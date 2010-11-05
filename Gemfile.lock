@@ -1,0 +1,43 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    RedCloth (4.2.3)
+    cgi_multipart_eof_fix (2.5.0)
+    coderay (0.9.5)
+    compass (0.10.2)
+      haml (>= 3.0.4)
+    daemons (1.0.10)
+    diff-lcs (1.1.2)
+    fastthread (1.0.7)
+    gem_plugin (0.2.3)
+    grit (2.3.0)
+      diff-lcs (~> 1.1)
+      mime-types (~> 1.15)
+    haml (3.0.17)
+    haml-coderay (0.1.1)
+      coderay
+      haml
+    mime-types (1.16)
+    mongrel (1.1.5)
+      cgi_multipart_eof_fix (>= 2.4)
+      daemons (>= 1.0.3)
+      fastthread (>= 1.0.1)
+      gem_plugin (>= 0.2.3)
+    rack (1.2.1)
+    staticmatic (0.10.8)
+      haml (>= 2.0.0)
+      mongrel (>= 1.1.5)
+      rack (>= 1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  RedCloth
+  coderay
+  compass
+  grit
+  haml
+  haml-coderay
+  rack
+  staticmatic
