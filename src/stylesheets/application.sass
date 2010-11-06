@@ -1,25 +1,56 @@
+@import "compass/css3"
+
 body
-  background-color: #E2DEDC
+  background: #E8E8E8 url(../images/bg_paper.jpg)
   position: relative
   // width gets adjusted by js later..
   width: 20000px 
 
+@mixin banana_link($color)
+  color: $color
+  border-bottom: 1px dashed $color
+  text-decoration: none
+  &:hover
+    border-bottom-width: 2px
+    border-style: solid
+
 #content
-  background: transparent url(../images/cmyk.png) no-repeat 10px center
-  margin: 0
-  padding: 28px 100px 30px 150px
+  margin: 0 0 0 0
+  padding: 20px 100px 20px 60px
+  
   &.invisible
     visibility: hidden
   p
+    font-family: Georgia, serif
+    display: block
     margin: 0
     padding: 0
     font-size: 2.5em
     color: #42403A
-    a
-      color: #42403A
-      border-bottom: 1px dashed #42403A
-      text-decoration: none
-      &:hover
-        color: #EC168E
-        border-bottom: 1px solid #EC168E
-      
+    a.a
+      @include banana_link(#436900)
+    a.b
+      @include banana_link(#577c0c)
+    a.c
+      @include banana_link(#829719)
+    a.d
+      @include banana_link(#ac9d03)
+    a.e  
+      @include banana_link(#b8a501)
+    a.f
+      @include banana_link(#e7c100)
+    a.g
+      @include banana_link(#e8c13a)
+    a.h
+      @include banana_link(#daac00)
+    a.i
+      @include banana_link(#c79a18)
+    span.j
+      color: #8f6906
+    a.j
+      @include banana_link(#4b2600)
+
+
+
+
+

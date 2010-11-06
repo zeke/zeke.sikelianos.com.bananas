@@ -1,11 +1,16 @@
 $(document).ready(function(){
-		
-	Typekit.load({
-	  active: function() {
-			$(window).resize();
-			$("#content").hide().removeClass('invisible').fadeIn(2000);
-	  }
-	});
+	
+	try {
+		Typekit.load({
+		  active: function() {
+				$(window).resize();
+				$("#content").hide().removeClass('invisible').fadeIn(3000);
+		  }
+		});
+	} catch(e) {
+		$(window).resize();
+		$("#content").hide().removeClass('invisible').fadeIn(3000);		
+	}
 
 });
 
