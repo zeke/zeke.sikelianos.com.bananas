@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	
+	// Load typekit, then reveal content..
 	try {
 		Typekit.load({
 		  active: function() {
@@ -8,8 +9,8 @@ $(document).ready(function(){
 		  }
 		});
 	} catch(e) {
-		// $(window).resize();
-		// $("#content").hide().removeClass('invisible').fadeIn(3000);		
+		$(window).resize();
+		$("#content").hide().removeClass('invisible').fadeIn(3000);		
 	}
 
 });

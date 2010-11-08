@@ -3,18 +3,20 @@
   %head
     %title Zeke Sikelianos, Web Designer/Developer
     = stylesheets 'blueprint_screen', 'application'
-    <script type="text/javascript" src="http://use.typekit.com/hhr2ppk.js"></script>    
-    
-    <script language="javascript" src="http://www.google.com/jsapi" type="text/javascript"></script>
-    <script type="text/javascript">
-    //<![CDATA[
-    google.load("jquery", "1.4.2");
-    // google.load("jqueryui", "1.8.1");
-    // google.load("chrome-frame", "1.0.2");
-    //]]>
-    </script>
-    = javascripts 'application'
+    = javascripts 'http://use.typekit.com/hhr2ppk.js', 'jquery-1.4.3.min', 'application'
   %body
 
     #content.invisible
-      = yield      
+      = yield
+      
+
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try{ 
+    var pageTracker = _gat._getTracker("UA-19562293-1");
+    pageTracker._trackPageview();
+    } catch(err) {} 
+    </script>
