@@ -1,1 +1,7 @@
 zeke.sikelianos.com was built with staticmatic, jquery, haml, sass, and love.
+
+Wishlist
+--------
+
+* https://github.com/lessallan/staticmatic-starter/blob/master/Rakefile
+* Mousewheel horizontal scrolling
