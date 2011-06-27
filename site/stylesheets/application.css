@@ -2,6 +2,8 @@ body {
   background: #e8e8e8 url(../images/bg_paper.jpg);
   position: relative;
   width: 20000px;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 #content {
@@ -90,16 +92,7 @@ body {
   border-bottom-width: 2px;
   border-style: solid;
 }
-#content p a.i {
-  color: #c79a18;
-  border-bottom: 1px dashed #c79a18;
-  text-decoration: none;
-}
-#content p a.i:hover {
-  border-bottom-width: 2px;
-  border-style: solid;
-}
-#content p span.j {
+#content p span.i {
   color: #8f6906;
 }
 #content p a.j {
